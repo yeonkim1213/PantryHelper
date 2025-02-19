@@ -1,0 +1,148 @@
+.pantry-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}
+
+.pantry-header {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.pantry-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pantry-header-left .ant-input-affix-wrapper {
+  width: 150px;  /* 검색바 너비 줄임 */
+}
+
+
+.pantry-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-icon {
+  font-size: 18px !important;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  padding: 4px 8px;
+  border: none;
+  height: auto;
+}
+
+.edit-icon {
+  color: #8ad142 !important;
+}
+
+.edit-icon:hover {
+  color: #8ad142 !important;
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.delete-icon {
+  color: #F47174 !important;
+}
+
+.delete-icon:hover {
+  color: #F47174 !important;
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.ant-btn.ant-btn-link {
+  padding: 0;
+  margin: 0;
+}
+
+.ant-btn.ant-btn-link:hover {
+  background: transparent;
+}
+
+.ant-table-tbody>tr:hover .action-icon {
+  opacity: 0.8;
+}
+
+.ant-table-tbody>tr:hover .edit-icon {
+  color: #76b039;
+}
+
+.ant-table-tbody>tr:hover .delete-icon {
+  color: #e06061;
+}
+
+.action-icon:focus {
+  outline: none;
+}
+
+/* Style for delete button */
+.pantry-header-right button[danger] {
+  width: 100px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-table {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ant-table-pagination {
+  text-align: center;
+}
+
+/* Add Pantry button - Blue */
+.pantry-header-right .ant-btn-primary {
+  background: #4fc0e3;
+  border-color: #4fc0e3;
+}
+
+.pantry-header-right .ant-btn-primary:hover {
+  background: #4fc0e3;
+  border-color: #4fc0e3;
+  opacity: 0.9;
+}
+
+/* Delete button - Red */
+.pantry-header-right .ant-btn-dangerous {
+  background: #F47174;
+  border-color: #F47174;
+  color: white;
+}
+
+.pantry-header-right .ant-btn-dangerous:hover {
+  background: #F47174;
+  border-color: #F47174;
+  opacity: 0.9;
+}
+
+.ant-table-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+.ant-form-item-label > label {
+  font-weight: 500;
+}

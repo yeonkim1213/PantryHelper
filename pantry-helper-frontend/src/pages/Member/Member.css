@@ -1,0 +1,92 @@
+#members-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#members-tables-container {
+  display: flex;
+  gap: 20px;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#staff-table,
+#subscriber-table {
+  flex: 1;
+  min-width: 580px;
+}
+
+#staff-table h4,
+#subscriber-table h4 {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+#staff-header,
+#subscriber-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.member-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.member-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-icon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  vertical-align: middle;
+}
+
+.delete-icon {
+  color: #F47174;
+}
+
+.action-icon:hover {
+  transform: scale(1.2);
+}
+
+.ant-table-tbody>tr:hover .action-icon {
+  opacity: 0.8;
+}
+
+.ant-table-tbody>tr:hover .delete-icon {
+  color: #e06061;
+}
+
+#staff-delete-button,
+#subscriber-delete-button {
+  width: 100px;
+  height: 30px;  
+  background-color: white;
+  border-color: #F47174;
+  color: #F47174;
+}
+
+#staff-delete-button:hover,
+#subscriber-delete-button:hover {
+  background-color: #F47174;
+  border-color: #F47174;
+  color: white;
+}
+
+
+

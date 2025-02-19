@@ -1,0 +1,138 @@
+#report-wrapper {
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#report-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#report-filters-left,
+#report-filters-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#report-filters-left {
+  flex: 1; 
+}
+
+.report-select-items {
+  min-width: 300px;
+  width: 300px;
+  max-width: 600px;
+}
+
+#report-select-month,
+#report-select-year {
+  min-width: 150px;
+  width: auto;
+}
+
+#report-reset-button {
+  height: 32px;
+}
+
+.report-graph-row-1,
+.report-graph-row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.report-graph-row-2 {
+  margin-top: 20px;
+}
+
+.graph-box {
+  flex: 1 1 300px;
+  height: 280px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#total-donations-box {
+  flex: 1 1 400px;
+  min-width: 400px;
+}
+
+#incoming-items-box,
+#outgoing-items-box {
+  flex: 1 1 300px;
+  background-color: white;
+}
+
+.report-custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.report-custom-tooltip p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  #report-filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  #report-filters-left,
+  #report-filters-right {
+    flex: none;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .report-select-items {
+    width: 100%;
+    max-width: none;
+  }
+
+  .graph-box,
+  #total-donations-box,
+  #incoming-items-box,
+  #outgoing-items-box {
+    flex: 1 1 100%;
+    min-width: 100%;
+    height: 250px;
+  }
+}
+
+.chart-title {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Remove or update the old h4 styling if it exists */
+.graph-box h4 {
+  display: none;
+}
+
+/* Update the graph-box height for second row */
+.report-graph-row-2 .graph-box {
+  flex: 1 1 300px;
+  height: 400px;  /* Increased from 280px */
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

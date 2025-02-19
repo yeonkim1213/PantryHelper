@@ -1,0 +1,285 @@
+/* First Row */
+#dashboard-top-row {
+  display: flex;
+  gap: 20px;
+  height: 350px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+#dashboard-second-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.boxes{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+#welcome-box {
+  flex: 0.7;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.welcome-text {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.welcome-text h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.welcome-text .pantry-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+#welcome-image-container {
+  display: flex;
+  align-items: center;
+}
+
+#welcome-image {
+  width: 120px;
+  height: auto;
+  padding-right: 30px;
+  opacity: 0.9;
+}
+
+/* Inventory Boxes */
+#incoming-box,
+#outgoing-box,
+#daily-report-box {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+#incoming-box h4,
+#outgoing-box h4,
+#daily-report-box h4 {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.chart-wrapper {
+  flex: 1;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.value {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+
+}
+
+.percentage {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+}
+
+
+#low-stock-box {
+  flex: 1.5;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.low-stock-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.low-stock-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.low-stock-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  color: #333;
+  font-size: 14px;
+}
+
+.item-quantity {
+  color: #F47174;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.see-more-button {
+  padding: 6px 12px;
+  background-color: #4fc0e3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.see-more-button:hover {
+  background-color: #3da8c9;
+}
+
+/* Events styles */
+.event-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-title {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#daily-report-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#daily-report-box .recharts-wrapper {
+  margin: 0 auto;
+}
+
+.date-range {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  #daily-report-box {
+    flex: 1;
+    padding: 10px;
+  }
+
+  #daily-report-box h4 {
+    font-size: 16px;
+  }
+
+  #daily-report-box .date-range {
+    font-size: 12px;
+  }
+
+  #daily-report-box .recharts-wrapper {
+    width: 90%; /* Shrink the container for smaller screens */
+    height: 150px; /* Reduce chart height */
+  }
+
+  #dashboard-top-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .boxes{
+    display: flex;
+  }
+
+  #welcome-box {
+    margin-bottom: 20px;
+  }
+
+  #incoming-box,
+  #outgoing-box,
+  #daily-report-box {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  #dashboard-second-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 210px;
+  }
+
+  #low-stock-box,
+  .events-section {
+    width: 85%;
+  }
+}

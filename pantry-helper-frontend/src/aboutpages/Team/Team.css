@@ -1,0 +1,104 @@
+.member-container {
+    max-width: 1500px;
+    color: #23272E;
+    padding: 20px;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    height: 580px;
+    overflow: auto;
+  }
+  
+  .team-member:nth-child(n+3) {
+    height: 450px;
+  }
+  
+  .member-header {
+    display: flex;
+    gap: 20px;
+  }
+  
+
+  .member-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+
+  
+  .member-basic-info h2 {
+    font-size: 18px;
+  }
+  
+  .member-basic-info .degree {
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  
+  .member-basic-info .contact {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .member-basic-info .contact a {
+    color: #45acd0;
+    text-decoration: none;
+  }
+  
+  .member-basic-info .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .bio {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-top: 3px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+  }
+  
+  #team-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #team-nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #team-nav-button {
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #bcdce8;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  #team-nav-button.active {
+    background: #45acd0;
+  }
+  
+  #team-nav-button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  

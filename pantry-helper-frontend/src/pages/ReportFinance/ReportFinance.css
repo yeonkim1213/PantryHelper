@@ -1,0 +1,146 @@
+.report-finance-container {
+  max-width: 1200px;
+  border-radius: 8px; 
+  overflow: hidden;
+}
+
+.report-finance-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.chart-card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chart-card p {
+  text-align: center;
+  color: #888;
+}
+
+
+.finance-chart-item h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+
+#finance-report-container {
+  height: 100%;
+  overflow: hidden;
+  padding: 0 20px 20px 20px;
+}
+
+#finance-charts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#finance-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+#finance-charts-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.finance-chart-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 380px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-chart-title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+}
+
+
+
+#finance-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+.finance-filter-left {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.finance-filter-right button {
+  background: #4fc0e3 !important;
+  border-color: #4fc0e3 !important;
+  color: white !important;
+}
+
+.finance-filter-right button:hover {
+  background: #45acd0 !important;
+  border-color: #45acd0 !important;
+  opacity: 0.9;
+}
+
+#finance-charts-row-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  height: 40vh;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#finance-charts-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 30vh;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#finance-transaction-history-chart {
+  width: 100%;
+  height: 400px;
+}
+
+#finance-pie-chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+.finance-tooltip {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

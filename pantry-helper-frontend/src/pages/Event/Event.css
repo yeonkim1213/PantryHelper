@@ -1,0 +1,269 @@
+.icon-selection {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.icon-circle {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.icon-circle.selected {
+  background-color: #e6f7ff;
+  border: 1px solid #1890ff;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 20px;
+  height: 100%;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.fc .fc-button-primary {
+  background-color: #4fc0e3;
+  border-color: #4fc0e3;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #3ba8d0;
+  border-color: #3ba8d0;
+}
+
+.fc-event {
+  border: none;
+  padding: 2px 4px;
+  margin: 1px 0;
+  cursor: pointer;
+}
+
+
+.fc-daygrid-event {
+  border-radius: 4px;
+}
+
+.fc-event-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 2px 4px;
+}
+
+.fc .fc-day-today {
+  background: rgba(79, 192, 227, 0.1) !important;
+}
+
+
+#add-event-btn {
+  background-color: #4fc0e3 !important;  /* Blue color */
+  color: white !important;
+  border: none !important;
+}
+
+
+#event-card {
+  margin-bottom: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#event-card .ant-card-body {
+  padding: 12px;
+}
+
+#event-content {
+  display: flex;
+  gap: 12px;
+}
+
+#event-details {
+  flex-grow: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+
+
+#events-pagination {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.fc {
+  height: 100% !important;
+  min-height: 500px !important;
+  max-height: 550px !important;
+}
+
+#event-title {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#event-date,
+#event-description,
+#event-location {
+  font-size: 14px;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fc-view-harness {
+  background-color: white;
+}
+
+.event-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.event-actions button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color:  #8ad142;
+  width: auto;
+  margin: 0;
+}
+
+.event-actions button:hover {
+  color: #8ad142;
+  background: none;
+}
+
+.delete-btn:hover {
+  color: #f44336 !important;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 1em;
+}
+
+.fc .fc-toolbar-title {
+  margin-left: -100px;
+}
+
+.fc .fc-prev-button {
+  margin-left: 0 !important;
+}
+
+.fc .fc-next-button {
+  float: right !important;
+  margin-right: 0 !important;
+}
+
+.event-actions button.edit-btn {
+  color: #8ad142;
+  box-shadow: none;
+}
+
+.event-actions button.delete-btn {
+  color: #ff4d4f;
+  box-shadow: none;
+}
+
+.event-actions button:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+  box-shadow: none;
+}
+
+.event-actions button.edit-btn:hover {
+  color: #8ad142;
+}
+
+.event-actions button.delete-btn:hover {
+  color: #ff7875;
+}
+
+.events-header {
+  margin-bottom: 16px;
+}
+
+.events-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ant-checkbox-wrapper {
+  color: #666;
+}
+
+#add-event-btn {
+  width: 100px;
+  border-radius: 10px;
+  padding: 4px 8px;
+  height: 32px;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Calendar text color */
+.fc {
+  color: #666;
+}
+
+.fc .fc-toolbar-title {
+  color: #666;
+  margin-left: 10px;
+}
+
+.fc .fc-button {
+  color: white;
+}
+
+/* Calendar header (Mon-Sun) colors */
+.fc-col-header-cell-cushion {
+  color: #666 !important;
+}
+
+/* Calendar date colors */
+.fc-daygrid-day-number {
+  color: #666 !important;
+}
+
+.event-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+#events-page {
+  min-width: 1200px;
+  overflow: hidden;
+  padding: 20px;
+}
+

@@ -1,0 +1,188 @@
+#tutorial-staff-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#tutorial-staff-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#tutorial-staff-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#tutorial-staff-nav-button {
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #8ecee4;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#tutorial-staff-nav-button.active {
+  background: #45acd0;
+}
+
+#tutorial-staff-nav-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+#tutorial-staff-content {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#tutorial-staff-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+#tutorial-staff-content h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+#tutorial-staff-content h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 30px 0 10px 0;
+}
+
+.tutorial-section-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.tutorial-section-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tutorial-section-content li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.tutorial-section-content img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* Specific smaller images */
+.tutorial-section-content img[alt="Staff Login"],
+.tutorial-section-content img[alt="Request Pantry"] {
+  max-width: 400px;
+}
+
+/* More space between major sections */
+#tutorial-staff-tips,
+#tutorial-staff-help {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.tutorial-section-content a {
+  color: #45acd0;
+  text-decoration: none;
+}
+
+.tutorial-section-content a:hover {
+  opacity: 0.8;
+}
+
+/* Make event add image smaller */
+.tutorial-section-content img[alt="Event Add"] {
+  max-width: 600px;  /* smaller than standard 800px */
+}
+
+.tutorial-section-content img[alt="Event Cancel"] {
+    max-width: 800px;  /* smaller than standard 800px */
+  }
+
+.event-image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-image-container p {
+  margin: 10px 0 20px 0;
+  font-style: italic;
+}
+
+#tutorial-staff-use-cases {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+
+.use-case-slider img[alt="Add items"] {
+  margin-top: 100px;
+  width: 400px;  /* or your preferred width */
+}
+
+.use-case-slider img[alt="Stock Management"]
+ {
+  width: 600px;  /* or your preferred width */
+  height: auto;
+  object-fit: contain;
+}
+.use-case-slider img[alt="Inventory Search"]
+{
+margin-top: 200px;
+}
+.use-case-slider img[alt="Stock Outgoing"]
+{
+margin-top: 130px;
+width: 600px;
+}
+.use-case-slider img[alt="Inventory Filter"] {
+  width: 300px;
+}
+
+.use-case-slider img[alt="Finance Add"]
+ {
+width: 400px;
+}
+
+.use-case-slider img[alt="Finance Management"]
+ {
+height: 400px;
+object-fit: contain;
+}
+.use-case-slider img[alt="Event New"] {
+  width: 400px;
+}
+
+.use-case-slider img[alt="Event Management"] {
+margin-top: 100px;
+}
+
+.use-case-slider img[alt="Add Map Box"] {
+  margin-top: 100px;
+  width: 500px;
+  }

@@ -1,0 +1,154 @@
+#tutorial-admin-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#tutorial-admin-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#tutorial-admin-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#tutorial-admin-nav-button {
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #8ecee4;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#tutorial-admin-nav-button.active {
+  background: #45acd0;
+}
+
+#tutorial-admin-nav-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+#tutorial-admin-content {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#tutorial-admin-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+#tutorial-admin-content h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+#tutorial-admin-content h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 30px 0 10px 0;
+}
+
+.tutorial-section-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.tutorial-section-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tutorial-section-content li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.tutorial-section-content img[alt="Pantry Management"] {
+    max-width: 700px;
+}
+.tutorial-section-content img[alt="Pantry Request"] {
+  max-width: 600px;
+}
+.tutorial-section-content img[alt="Pantry Edit"] {
+  max-width: 600px;
+}
+.tutorial-section-content img[alt="Pantry Add"] {
+  max-width: 600px;
+}
+.tutorial-section-content img[alt="Pantry Search"] {
+  margin-top: 100px;
+}
+
+.tutorial-section-content img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+#tutorial-admin-tips,
+#tutorial-admin-help {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.tutorial-section-content a {
+  color: #45acd0;
+  text-decoration: none;
+}
+
+.tutorial-section-content a:hover {
+  opacity: 0.8;
+}
+
+.event-image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-image-container p {
+  margin: 10px 0 20px 0;
+  font-style: italic;
+}
+
+#tutorial-admin-use-cases {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+
+.use-case-slider {
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 50px;
+}
+
+
+.slick-arrow {
+  background-color: #45acd0 !important;
+  border-radius: 50%;
+}
+

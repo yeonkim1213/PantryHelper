@@ -1,0 +1,62 @@
+.grid-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .stock-indicator {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .box-title {
+    margin: 5px 0 2px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .item-name {
+    margin: 2px 0 0;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .ant-btn-primary {
+    background: #45acd0 !important;
+    border-color: #45acd0 !important;
+    color: white !important;
+  }
+  
+  .ant-btn-primary:hover {
+    opacity: 0.9;
+  }
+  
+  .ant-modal-footer .ant-btn-primary {
+    background: #45acd0 !important;
+    border-color: #45acd0 !important;
+    color: white !important;
+  }
+  
+  .ant-modal-footer .ant-btn-primary:hover {
+    opacity: 0.9;
+  }
+  
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  

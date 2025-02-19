@@ -1,0 +1,118 @@
+.finance-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  min-width: 800px;
+  overflow: hidden;
+}
+
+.finance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  min-width: 800px;
+  overflow: hidden;
+}
+
+.finance-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.finance-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.finance-tables-container {
+  display: flex;
+  gap: 20px;
+  min-width: 800px;
+  overflow: hidden;
+}
+
+.finance-table {
+  flex: 1;
+  min-width: 380px;
+  overflow: hidden;
+}
+
+.finance-table h4 {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.ant-table-pagination {
+  text-align: center;
+}
+.ant-table {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+.action-icon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  vertical-align: middle;
+}
+
+.edit-icon {
+  color: #8ad142;
+}
+
+.delete-icon {
+  color: #F47174;
+}
+
+.action-icon:hover {
+  transform: scale(1.2);
+}
+
+
+.ant-table-tbody>tr:hover .action-icon {
+  opacity: 0.8;
+}
+
+.ant-table-tbody>tr:hover .edit-icon {
+  color: #76b039;
+}
+
+.ant-table-tbody>tr:hover .delete-icon {
+  color: #e06061;
+}
+
+.action-icon:focus {
+  outline: none;
+}
+
+/* Style for delete button */
+.finance-header-right button[danger] {
+  width: 100px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finance-header-right .ant-btn-primary {
+  background: #4fc0e3 !important;
+  border-color: #4fc0e3 !important;
+  color: white !important;
+}
+
+.finance-header-right .ant-btn-primary:hover {
+  background: #45acd0 !important;
+  border-color: #45acd0 !important;
+  opacity: 0.9;
+}

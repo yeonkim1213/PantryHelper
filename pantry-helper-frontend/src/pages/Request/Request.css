@@ -1,0 +1,137 @@
+.request-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+.request-content {
+  display: flex;
+  gap: 20px;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#request-welcome-section {
+  flex: 1;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+ 
+  min-width: 300px;
+}
+
+#request-welcome-section h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+  white-space: nowrap;
+}
+
+#request-welcome-section p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.table-section {
+  flex: 2;
+  min-width: 800px;
+  overflow: hidden;
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.request-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.request-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+.request-header-right button[danger] {
+  min-width: 80px;
+  max-width: 100px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #F47174 !important;
+  color: #F47174 !important;
+}
+
+.request-header-right button[danger]:hover {
+  background-color: #F47174 !important;
+  border-color: #F47174 !important;
+  color: white !important;
+}
+
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action-icon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  vertical-align: middle;
+}
+
+.edit-icon {
+  color: #8ad142;
+}
+
+.delete-icon {
+  color: #F47174;
+}
+
+.action-icon:hover {
+  transform: scale(1.2);
+}
+
+#request-table .disabled-icon {
+  color: #d9d9d9;
+  cursor: not-allowed;
+}
+
+#request-table .disabled-icon:hover {
+  transform: none;
+  color: #d9d9d9;
+}
+.request-container .request-header-right .ant-btn-primary {
+  background: #45acd0 !important;
+  border-color: #45acd0 !important;
+  color: white !important;
+}
+
+.request-container .request-header-right .ant-btn-primary:hover {
+  background: #45acd0 !important;
+  border-color: #45acd0 !important;
+  opacity: 0.9;
+}
+  

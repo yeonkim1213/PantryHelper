@@ -1,0 +1,658 @@
+.login-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.login-card {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.profile-card {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+#login-recipient-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 240px;
+  margin: 20px auto;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+#login-recipient-button:hover {
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-icon {
+  font-size: 20px;
+}
+
+/* Profile Page */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.logout-button {
+  background: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logout-button:hover {
+  background: #f8f8f8;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-info {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.notification-toggle {
+  margin-top: 15px;
+}
+
+.notification-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Pantry Section */
+.pantry-section {
+  margin-top: 20px;
+}
+
+.pantry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pantry-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.register-staff-link {
+  color: #4fc0e3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.register-staff-link:hover {
+  color: #3ba8cb;
+}
+
+.manage-subscriptions-button {
+  background: #4fc0e3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.manage-subscriptions-button:hover {
+  background: #3ba8cb;
+}
+
+.pantry-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.pantry-table th,
+.pantry-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.pantry-table th {
+  font-weight: 500;
+  color: #666;
+}
+
+.profile-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.delete-profile-link {
+  color: #ff4444;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-profile-link:hover {
+  color: #ff0000;
+}
+
+/* Manage Subscriptions Page */
+.manage-subscriptions {
+  position: relative;
+  padding-top: 60px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.manage-subscriptions .back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #4fc0e3;
+  box-shadow: 0 0 0 2px rgba(79, 192, 227, 0.1);
+}
+
+.subscription-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.pantry-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.role-badge {
+  background: #0085db;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.subscribe-button,
+.unsubscribe-button,
+.role-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 14px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.subscribe-button {
+  background: #4fc0e3;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+
+.subscribe-button:hover {
+  opacity: 0.9;
+}
+
+.unsubscribe-button {
+  background: #F47174;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+
+.unsubscribe-button:hover {
+  opacity: 0.9;
+}
+
+.role-button {
+  background: #8ad142;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: not-allowed;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+
+.subscribe-button:disabled,
+.unsubscribe-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Staff Login Page */
+.staff-login {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.request-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.request-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.link-text {
+  color: #4fc0e3;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-text:hover {
+  color: #3ba8cb;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group input,
+.select-container {
+  width: 100%;
+  font-size: 14px;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background: #4fc0e3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.info-text {
+  color: #666;
+  font-style: italic;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+ 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+
+}
+
+.modal-content h3 {
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.modal-content .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-content .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.modal-content .form-group input {
+  width: 100%;
+  padding: 10px;
+
+
+  font-size: 14px;
+}
+
+.modal-content .form-group input:focus {
+  outline: none;
+  border-color: #0085db;
+  box-shadow: 0 0 0 2px rgba(0, 133, 219, 0.1);
+}
+
+.info-text {
+  color: #666;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.modal-content .button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.modal-content .button-group button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.modal-content .button-group button[type="submit"] {
+  background: #0085db;
+  color: white;
+  border: none;
+}
+
+.modal-content .button-group button[type="submit"]:hover {
+  background: #0073c2;
+}
+
+.modal-content .button-group .cancel-button {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.modal-content .button-group .cancel-button:hover {
+  background: #f8f8f8;
+  border-color: #ccc;
+}
+
+/* Disabled state styles */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+/* Title styling */
+.staff-login h3,
+.modal-content h3 {
+    text-align: center;
+    margin: 20px 0 30px;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Back button positioning */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.back-button:hover {
+    color: #333;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group input,
+.form-group select {
+    width: 90%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Submit button container */
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding-right: 20px;
+}
+
+/* Submit button */
+.submit-button {
+    background: #4fc0e3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background: #3ba8cb;
+}
+
+/* Position modal using ID */
+#request-pantry-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 9999;
+}
+
+#request-pantry-modal .modal-content {
+    margin-right: 20px;
+}
+
+
+.request-form h3 {
+  text-align: center;
+  margin: 0 0 30px;  /* Adjust margin to center vertically */
+  color: #333;
+  font-size: 20px;
+  width: 100%;  /* Ensure full width */
+}
+.form-group input[type="password"] {
+  width: 90%; 
+  display: block;  
+  margin: 0 auto;  
+}
+
+.request-form-section h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.request-form-section .form-group {
+    margin-bottom: 15px;
+}
+
+.request-form-section input {
+    max-width: 100%;
+}
+
+.request-form-section .info-text {
+    color: #666;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.request-form-section .submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-text {
+    color: #4fc0e3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link-text:hover {
+    color: #3ba8cb;
+}
+.staff-login {
+    flex: 1;
+    max-width: 500px;
+}
+
+.request-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.login-options {
+  position: fixed;
+  top: 50%;
+  left: 500px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+  min-width: 400px;
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .login-card,
+  .profile-card {
+    max-width: 100%;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

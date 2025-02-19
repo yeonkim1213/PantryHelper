@@ -1,0 +1,176 @@
+.faq {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 0 20px;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 800px;
+}
+
+.category-buttons button {
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 16px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s;
+
+}
+
+.category-buttons button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.category-buttons button.active-category {
+  background: #45acd0;
+  font-weight: 500;
+}
+
+.search-bar-container {
+  position: relative;
+  width: 150px;
+  margin-right: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 16px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search-input:focus {
+  border-color: #45acd0;
+  box-shadow: 0 0 5px rgba(79, 192, 227, 0.2);
+}
+
+.help-content {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  min-width: 1160px;
+  overflow: hidden;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-item p {
+  margin: 0 0 6px;
+  line-height: 1.4;
+  color: #666;
+}
+
+.faq-item p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-item p strong {
+  color: #333;
+  font-size: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.pagination button {
+  background-color: #45acd0;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-weight: 500;
+}
+
+.pagination button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.pagination button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: #666;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.email-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.email-wrapper .anticon {
+  color: #4fc0e3;
+  font-size: 16px;
+}
+
+.help-container {
+  position: relative;
+  min-width: 1200px;
+  overflow: hidden;
+}
+  

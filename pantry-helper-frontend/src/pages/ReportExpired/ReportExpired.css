@@ -1,0 +1,144 @@
+#expired-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#expired-tables-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 0;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+#expired-table,
+#soon-table {
+  flex: 1;
+  margin-top: 0;
+  min-width: 580px;
+  overflow: hidden;
+}
+
+#expired-header,
+#soon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.expired-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.expired-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#expired-delete-button,
+#soon-delete-button {
+  min-width: 80px;
+  max-width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #F47174 !important;
+  color: #F47174 !important;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#expired-delete-button:hover,
+#soon-delete-button:hover {
+  background-color: #F47174 !important;
+  border-color: #F47174 !important;
+  color: white !important;
+}
+
+.ant-table {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  min-width: 580px;
+}
+
+.ant-table-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#expired-pagination,
+#soon-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#expired-table h4,
+#soon-table h4 {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.action-icon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  vertical-align: middle;
+}
+
+.delete-icon {
+  color: #F47174;
+}
+
+.action-icon:hover {
+  transform: scale(1.2);
+}
+
+.ant-table-tbody>tr:hover .action-icon {
+  opacity: 0.8;
+}
+
+.ant-table-tbody>tr:hover .delete-icon {
+  color: #F47174;
+}
+
+.action-icon:focus {
+  outline: none;
+}
+
+.expired-header-left .ant-space {
+  gap: 8px;
+}
+
+.expired-header-left .ant-btn {
+  background: white;
+  border: 1px solid #d9d9d9;
+}
+
+.expired-header-left .ant-btn:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.expired-header-right .ant-btn {
+  background: white;
+  border: 1px solid #d9d9d9;
+}
+
+.expired-header-right .ant-btn:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}

@@ -1,0 +1,32 @@
+
+.App {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0085db12;
+  
+}
+
+/* Update .page-content to adjust its left margin */
+.page-content {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  border-radius: 20px; 
+  margin-top: calc(1rem + 60px);
+  margin-left: var(--sidebar-width, 260px); 
+  width: calc(100% - var(--sidebar-width, 260px)); /* Adjust width dynamically */
+  overflow: auto;
+  transition: all 300ms ease;
+}
+
+.content-container {
+  display: flex;
+  width: 100%; 
+  overflow: hidden;
+}
+

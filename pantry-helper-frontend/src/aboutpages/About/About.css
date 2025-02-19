@@ -1,0 +1,137 @@
+#about-main-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#about-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#about-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#about-nav-button {
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #bcdce8;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#about-nav-button.active {
+  background: #45acd0;
+}
+
+#about-nav-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#about-row-1, #about-row-2, #about-row-3 {
+  display: flex;
+  gap: 10px;
+}
+
+#about-purpose, #about-target, #about-impact, #about-design, #about-architecture, #about-database {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#about-row-2 {
+  display: flex;
+  gap: 10px;
+}
+
+#about-row-2-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#about-row-2-right {
+  flex: 1;
+}
+
+#about-row-3 {
+  display: flex;
+  gap: 10px;
+}
+
+#about-architecture, #about-database {
+  flex: 1;
+}
+
+#about-architecture-image, #about-database-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#about-title h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+#about-purpose h2,
+#about-target h2,
+#about-impact h2,
+#about-design h2,
+#about-architecture h2,
+#about-database h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+#about-design-user h3,
+#about-design-inclusive h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+#about-purpose p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+#about-target ul,
+#about-impact ul,
+#about-design-user ul,
+#about-design-inclusive ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#about-target li,
+#about-impact li,
+#about-design-user li,
+#about-design-inclusive li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 5px;
+}
+

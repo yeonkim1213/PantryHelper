@@ -1,0 +1,305 @@
+/* First Row */
+#dashboard-top-row {
+  display: flex;
+  gap: 20px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#welcome-box {
+  flex: 0.7;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.welcome-text {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.welcome-text h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.welcome-text .pantry-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+#welcome-image-container {
+  display: flex;
+  align-items: center;
+}
+
+#welcome-image {
+  width: 120px;
+  height: auto;
+  padding-right: 30px;
+  opacity: 0.9;
+}
+
+.inventory-promotion {
+  flex: 1.3;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-promotion h4 {
+  margin: 0;
+}
+
+.inventory-promotion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.inventory-promotion li {
+  padding: 3px 0;
+  color: #666;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inventory-actions {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.see-more-button {
+  padding: 6px 12px;
+  background-color: #4fc0e3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.see-more-button:hover {
+  background-color: #3da8c9;
+}
+
+#request-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+#request-text {
+  color: #666;
+  font-size: 14px;
+}
+#request-link {
+  color: #4fc0e3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Second Row */
+#dashboard-second-row {
+  display: flex;
+  height: 430px;
+}
+
+.today-recipe-container {
+  flex: 1.5;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-layout {
+  display: flex;
+  gap: 20px;
+  height: calc(100% - 50px);
+}
+
+.recipe-image-container {
+  flex: 1;
+  max-width: 300px;
+}
+
+#recipe-image {
+  margin-top: 20px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.recipe-details {
+  flex: 1;
+}
+
+.recipe-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.recipe-details li {
+  padding: 3px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.recipe-details a {
+  color: #4fc0e3;
+  text-decoration: none;
+}
+
+.events-section {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Events styles */
+.event-list {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-title {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.event-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.events-button {
+  display: none;
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+
+.inventory-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Common section header style */
+.section-header,
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h4,
+.inventory-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+.event-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-title {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+.event-date {
+  color: #666;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+
+.today-recipe-container .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 15px 0;  /* Added top margin */
+  }

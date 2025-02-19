@@ -1,13 +1,7 @@
+
 # Pantry Helper
 
-## Description
-Our capstone project, Pantry Helper, addresses difficulties and inefficiencies in food pantry operations, making processes smoother for both pantries and donors. Pantry Helper simplifies operations for pantries while providing donors with a more seamless experience. Our solution aims to alleviate operational challenges, ultimately improving the efficiency and effectiveness of food pantry operations.
-
-Pantry Helper is a web-based inventory application designed to help food pantries, specifically the Feed U Pantry at the University of Utah, streamline their donation management process.The application provides a user-friendly interface for recording incoming donations, tracking outgoing food distribution, and generating insightful data analysis reports. Pantry Helper's data analysis features help food pantries identify patterns in donation trends and popular items,enabling them to make informed decisions about future inventory needs and fundraising efforts. The data analysis will also gather data regarding what items are expiring so that future donations will lead to more distributions and less waste. It will also monitor items that are low in stock, encouraging donors to contribute the needed items. 
-
-Additionally, the application's automated email system fosters positive relationships between donors and recipients by allowing recipients to express their gratitude directly to the donors, potentially encouraging repeat donations. Pantry Helper automates tedious inventory management tasks and provides valuable data insights, which empowers food pantries to operate more efficiently and effectively.
-
-By simplifying the donation process, this will ultimately enable them to serve their communities to a greater extent. This project is a perfect capstone project as it addresses a real-world need within the food pantry community. The project is feasible, impactful, and has the potential to make a significant difference in the lives of those who rely on food pantries for assistance.
+Pantry Helper is a web application designed to assist in managing pantry inventories, users, and other pantry-related activities.
 
 ---
 

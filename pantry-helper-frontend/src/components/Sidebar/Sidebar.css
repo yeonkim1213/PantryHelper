@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  transition: width 0ms ease;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  height: calc(100% - 2rem);
+  width: 260px;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 20px;
+}
+
+.Sidebar.collapsed {
+  width: 80px;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#logo-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#logo-image {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.Sidebar.collapsed #logo-image {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-text {
+  color: #3a3939;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 10;
+}
+.Sidebar.collapsed #logo-text {
+  display: none;
+}
+
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 1.7rem;
+  margin: 0 1.5rem 0.5rem;
+  position: relative;
+  transition: width 200ms ease;
+  padding: 2px;
+  width: calc(100% - 3rem);
+  text-decoration: none;
+  color: inherit; 
+  min-width: 0;
+}
+
+.Sidebar.collapsed .menuItem a {
+  display: none;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: #e0e0e0;
+  width: 230px;
+}
+
+.menuItem a, .menuItem span {
+  color: #5d5c5c; 
+  text-decoration: none;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.menuItem.active {
+  border-right: 3px solid #3a3939;
+  width: 230px;
+  padding-left: 1px;
+}
+
+.menuItem.active[data-is-report="true"] {
+  border-right: none;
+}
+
+.menuItem[data-report-active="true"] {
+  border-right: 3px solid #3a3939;
+  width: 230px;
+  padding-left: 1px;
+}
+
+.menuItem.active a, .menuItem.active span {
+  color: #3a3939;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  width:230px;
+}
+
+.menuItem img {
+  width: 22px;
+  height: 22px;
+  margin-left: 7px;
+  filter: brightness(0) saturate(100%) invert(0);
+}
+
+.menuItem .arrow-icon {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  margin-left: 200px;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  height: calc(100% - 140px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
+}
+
+.menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  margin-left: 3rem;
+  transition: all 0.3s ease;
+  width: calc(100% - 3rem);
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: #5d5c5c;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.dropdown a:hover {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.Sidebar.collapsed .dropdown {
+  display: none; /* Hide dropdown when collapsed */
+}
+
+.collapse-button {
+  width: 100%;
+  padding: 10px;
+  text-align: right;  /* Align to right when expanded */
+  background-color: transparent;  /* Remove background color */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;  /* Align icon to right when expanded */
+  padding-right: 20px;  /* Add some padding on the right */
+}
+
+/* Center the icon when collapsed */
+.Sidebar.collapsed .collapse-button {
+  justify-content: center;
+  padding-right: 0;
+}
+
+/* Style the chevron icons */
+.collapse-button svg {
+  color: #5d5c5c;
+  width: 20px;
+  height: 20px;
+}
+
+.collapse-button:hover svg {
+  color: #3a3939;
+}
+
+/* Remove hover background */
+.collapse-button:hover {
+  background-color: transparent;
+}
+
+.Sidebar.collapsed .menuItem.active {
+  border-right: none; /* Remove right border when collapsed */
+  background-color: #f0f0f0; /* Keep the background color */
+  width: 100%; /* Ensure full width in collapsed state */
+}
+
+.dropdown a.active {
+  color: #3a3939;
+  font-weight: bold;
+  border-right: 3px solid #3a3939;
+  background-color: transparent;
+}
+
+.Sidebar.collapsed .dropdown a.active {
+  background-color: transparent;
+}

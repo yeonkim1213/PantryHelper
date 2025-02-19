@@ -1,0 +1,45 @@
+.Contact-container {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+.Contact-content {
+    display: flex;
+    gap: 20px;
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+#pantry-contact {
+  flex: 1;
+ 
+  background: white;
+  border-radius: 8px;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+#pantry-contact h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#pantry-contact p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

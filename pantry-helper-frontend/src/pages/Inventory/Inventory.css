@@ -1,0 +1,92 @@
+.inventory_title{
+  margin-right: 4rem;
+  min-width: 800px;
+  overflow: hidden;
+}
+
+
+.resetFilterButtonBox{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2;
+}
+
+/* Add these styles */
+.add-item-button {
+  height: 32px;
+  padding: 4px 15px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+}
+
+.stock-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.toolbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 800px;
+  overflow: hidden;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.actions-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.actions-container button {
+  color: #4fc0e3 !important;
+  border-color: #4fc0e3 !important;
+}
+
+.actions-container button:hover {
+  background-color: rgba(79, 192, 227, 0.1) !important;
+}
+
+.add-item-button {
+  height: 32px;
+  padding: 4px 15px !important;
+  border-radius: 6px !important;
+  font-weight: 400;
+  font-size: 14px;
+  color: #45acd0 !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.add-item-button:hover {
+  background-color: #45acd0 !important;
+}
+
+.MuiTableContainer-root {
+  min-width: 800px;
+  overflow-x: hidden !important;
+}
+
+.MuiTableCell-root {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
